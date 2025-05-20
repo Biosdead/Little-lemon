@@ -1,0 +1,37 @@
+section.Hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #495E57;
+  color: #EDEFEE;
+}
+
+section.Hero h1 {
+  color: #F4CE14;
+}
+
+section.Hero aside img{
+  border-width: 10%;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #F4CE14;
+  margin: 2%;
+}
+
+section.Hero aside button{
+  width: 25vw;
+  border-width: 10%;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #EDEFEE;
+  background-color: #F4CE14;
+  color: #495E57;
+  font-size: large;
+  margin-bottom: 2%;
+}
+
+section.Hero aside button:hover{
+  background-color: #495E57;
+  color: #F4CE14;
+  font-size: larger;
+}
