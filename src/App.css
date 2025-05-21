@@ -1,0 +1,27 @@
+
+
+h1{
+  font-family: "Markazi Text", serif;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+h2{
+  font-family: "Markazi Text", serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+p{
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a{
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+}
