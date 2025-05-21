@@ -1,0 +1,31 @@
+section.Testemonials header {
+  text-align: center;
+  color: #333333;
+}
+
+section.Testemonials aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section.Testemonials img {
+  border: #333333 solid 1%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+section.Testemony {
+  border: #333333 solid 5%;
+  border-radius: 8%;
+  background-color: #EDEFEE;
+  text-align: center;
+  width: 20%;
+  height: auto;
+  margin: auto;
+  padding: 1%;
+}

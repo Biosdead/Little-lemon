@@ -5,7 +5,7 @@ export default function Card(props){
         <h2>{props.title}</h2>
         <h3>{props.price}</h3>
         <p>{props.description}</p>
-        <a href="#">Click here!</a>
+        <a href="#">Order a delivery</a>
         </section>
     );
 }
