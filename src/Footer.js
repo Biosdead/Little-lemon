@@ -1,22 +1,24 @@
 import Logo from './images/secondaryLogo.png';
 import footerCss from './footer.css';
+import { Link } from "react-router-dom";
+
 
 function Footer(){
     return (
         <footer>
             <section className="Menus">
                 <section id="Logo">
-                    <img src={Logo}/>
+                    <Link to="/"><img src={Logo}/></Link>
                 </section>
                 <section className="Menu">
                     <h6>Navigation</h6>
                     <ul>
-                      <li><a href="#">Home</a></li>   
-                      <li><a href="#">About</a></li>   
-                      <li><a href="#">Menu</a></li>   
-                      <li><a href="#">Reservations</a></li>   
-                      <li><a href="#">Order Online</a></li>   
-                      <li><a href="#">Login</a></li>   
+                      <li><Link to="/">Home</Link></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><Link to="/booking">Reservations</Link></li>
+                    <li><a href="#">Order Online</a></li>
+                    <li><a href="#">Login</a></li>
                     </ul>
                 </section>
                 <section className="Menu">

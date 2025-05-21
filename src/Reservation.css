@@ -1,0 +1,98 @@
+
+/* ----------  variables  ----------- */
+:root{
+  --bg       : #495E57;
+  --accent   : #F4CE14;
+  --accent-d : #d1b212;
+  --text     : #EDEFEE;
+  --surface  : #3b4a45;
+  --radius   : 12px;
+  --spacing  : 1rem;
+  --ff-base  : system-ui, sans-serif;
+}
+
+/* ----------  wrapper  ----------- */
+.ReservationForm{
+  background:var(--surface);
+  border-radius:var(--radius);
+  padding:clamp(1.5rem,4vw,3rem);
+  max-width:480px;
+  margin-inline:auto;
+  color:var(--text);
+  font-family:var(--ff-base);
+  box-shadow:0 12px 30px rgba(0,0,0,.35);
+  margin-top: 2%;
+}
+
+.ReservationForm h1{
+  font-size:clamp(1.4rem,2vw,1.8rem);
+  line-height:1.2;
+  margin:0 0 1.4rem;
+  color:var(--accent);
+  text-align:center;
+}
+
+/* ----------  grid  ----------- */
+.ReservationForm .grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:var(--spacing) calc(var(--spacing)*1.2);
+}
+
+.ReservationForm label{
+  display:flex;
+  align-items:center;
+  gap:.25rem;
+  font-weight:500;
+  font-size:.95rem;
+}
+
+.ReservationForm label span{color:var(--accent);}
+
+.ReservationForm input,
+.ReservationForm select{
+  padding:.55rem .75rem;
+  border:2px solid transparent;
+  border-radius:var(--radius);
+  background:#fff;
+  color:#333;
+  font-size:.95rem;
+  font-family:inherit;
+  transition:border .25s ease, box-shadow .25s ease;
+}
+
+.ReservationForm input:focus,
+.ReservationForm select:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+/* ----------  submit button ----------- */
+.ReservationForm button{
+  margin-top:2rem;
+  width:100%;
+  padding:.8rem 1rem;
+  background:var(--accent);
+  color:#222;
+  font-weight:600;
+  font-size:1rem;
+  border:none;
+  border-radius:var(--radius);
+  cursor:pointer;
+  transition:background .25s ease, transform .2s ease;
+}
+
+.ReservationForm button:hover{
+  background:var(--accent-d);
+  transform:translateY(-2px);
+}
+
+.ReservationForm button:active{
+  transform:translateY(0);
+}
+
+/* ----------  mobile  ----------- */
+@media(max-width:480px){
+  .ReservationForm .grid{grid-template-columns:1fr;}
+}

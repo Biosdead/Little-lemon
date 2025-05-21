@@ -4,7 +4,7 @@ import AboutCss from './About.css';
 
 export default function About(){
     return(
-        <section className="About">
+        <section id="About" className="About">
             <aside className="left">
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>

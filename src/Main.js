@@ -11,7 +11,6 @@ function Main(){
             <Specials/>
             <Testemonials/>
             <About/>
-            <Reservation/>
         </main>
     );
 }
