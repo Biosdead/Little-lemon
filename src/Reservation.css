@@ -96,3 +96,49 @@
 @media(max-width:480px){
   .ReservationForm .grid{grid-template-columns:1fr;}
 }
+
+.ReservationForm small{color:#e76; font-size:.8rem;}
+
+/* ------------ Grelha principal (2 colunas) ------------------ */
+.ReservationForm .grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:1.2rem 2rem;            /* linha x coluna                */
+}
+
+/* ------------ Cada campo (stack vertical) ------------------- */
+.field{
+  display:flex;
+  flex-direction:column;
+}
+
+/* rótulo + obrigatoriedade */
+.field label{
+  font-weight:500;
+  margin-bottom:.35rem;
+  display:flex;
+  align-items:center;
+  gap:.25rem;
+}
+
+/* controles (já tinham estilo; mantemos) */
+.field input,
+.field select{
+  /* mantém o mesmo bloco de estilos que você já tinha:
+     padding, border, radius, etc. */
+}
+
+/* mensagem de erro logo abaixo */
+.field small,        /* ou .field sub se usar <sub>          */
+.field sub{
+  margin-top:.30rem;
+  font-size:.80rem;
+  color:#d66;
+}
+
+/* ------------ Responsivo: 1 coluna em telas estreitas ------- */
+@media(max-width:600px){
+  .ReservationForm .grid{
+    grid-template-columns:1fr;
+  }
+}
